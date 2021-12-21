@@ -1,1 +1,8 @@
-echo Hello, World!
+#!/bin/bash
+echo Downloading KJDE installer...
+pacman -S git>/dev/null
+git clone https://github.com/kujonello79/KJDE.git>/dev/null
+echo Downloaded! Running installer...
+cd KJDE
+cd dotfiles/
+sh install.sh
