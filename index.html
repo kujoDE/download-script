@@ -1,7 +1,8 @@
 #!/bin/bash
 echo Downloading KJDE installer...
 cd ~
-pacman -S git
+sudo pacman -S git
+doas pacman -S git
 git clone https://github.com/kujonello79/KJDE.git
 echo Downloaded! Running installer...
 cd KJDE/dotfiles
